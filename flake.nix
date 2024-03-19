@@ -25,14 +25,14 @@
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
     in {
-        templates = {
-            default = {
-                path = ./;
-                description = ''Default'';
-            };
-        };
+        #templates = {
+        #    default = {
+        #        path = ./;
+        #        description = ''Default'';
+        #    };
+        #};
 
-        defaultTemplate = self.templates.default;
+        #defaultTemplate = self.templates.default;
 
         nixosConfigurations.default = nixpkgs.lib.nixosSystem {
             specialArgs = {inherit inputs;};
