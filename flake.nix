@@ -13,14 +13,9 @@
             url = "github:nix-community/nixvim";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        sf = {
-            url = "github:adamcstephens/apple-fonts.nix";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
     };
 
-    outputs = { nixpkgs, home-manager, nixvim, sf, ... }@inputs:
+    outputs = { nixpkgs, home-manager, nixvim, ... }@inputs:
     let
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};

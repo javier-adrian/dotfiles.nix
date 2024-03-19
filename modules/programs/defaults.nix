@@ -7,5 +7,6 @@
         ./rofi.nix
         ./i3.nix
         ./polybar.nix
+        ./git.nix
     ];
 }

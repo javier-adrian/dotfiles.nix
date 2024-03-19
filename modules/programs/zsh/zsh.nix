@@ -1,7 +1,7 @@
 { pkgs, lib, config, ... }:
 
 let
-  currPath = ''~/.config/home-manager/modules/programs/zsh/''
+  currPath = ''~/.config/home-manager/modules/programs/zsh/'';
 in
 {
   programs.zsh = {

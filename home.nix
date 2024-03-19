@@ -20,6 +20,7 @@
       tldr
       sx
       rofi
+      p7zip
     ];
 
     file = {

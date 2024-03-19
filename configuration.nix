@@ -84,9 +84,8 @@
 
     fonts = {
         enableDefaultPackages = true;
-        packages = [
-            pkgs.fira-code-nerdfont
-            inputs.sf
+        packages = with pkgs; [
+            fira-code-nerdfont
         ];
     };
 
